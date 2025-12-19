@@ -6,9 +6,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Cirreum.Communications.Sms.Twilio" Version="1.0.5" />
+		<PackageReference Include="Cirreum.Communications.Sms.Twilio" Version="1.0.6" />
 		<PackageReference Include="Cirreum.Communications.Email.SendGrid" Version="1.0.2" />
-		<PackageReference Include="Cirreum.Runtime.ServiceProvider" Version="1.0.2" />
+		<PackageReference Include="Cirreum.Runtime.ServiceProvider" Version="1.0.3" />
 	</ItemGroup>
 	
 </Project>
