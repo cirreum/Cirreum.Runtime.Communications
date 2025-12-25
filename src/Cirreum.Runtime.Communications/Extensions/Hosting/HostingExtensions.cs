@@ -34,7 +34,12 @@ public static class HostingExtensions {
 				SendGridEmailRegistrar,
 				SendGridEmailSettings,
 				SendGridEmailInstanceSettings,
-				SendGridEmailHealthCheckOptions>();
+				SendGridEmailHealthCheckOptions>()
+			.RegisterServiceProvider<
+				AzureEmailRegistrar,
+				AzureEmailSettings,
+				AzureEmailInstanceSettings,
+				AzureEmailHealthCheckOptions>();
 
 		// .RegisterServiceProvider<AbcEmailRegistrar>();
 

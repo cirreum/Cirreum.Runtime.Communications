@@ -10,11 +10,11 @@
 
 ## Overview
 
-**Cirreum.Runtime.Communications** provides a standardized approach to integrating email and SMS services into .NET applications. It offers provider-agnostic abstractions with built-in support for SendGrid (email) and Twilio (SMS), including health checks, bulk operations, and Azure Key Vault integration.
+**Cirreum.Runtime.Communications** provides a standardized approach to integrating email and SMS services into .NET applications. It offers provider-agnostic abstractions with built-in support for multiple providers: SendGrid and Azure Email Service for email, and Twilio for SMS, including health checks, bulk operations, and Azure Key Vault integration.
 
 ## Features
 
-- **Multi-provider support** - SendGrid for email, Twilio for SMS
+- **Multi-provider support** - SendGrid and Azure Email Service for email, Twilio for SMS
 - **Named instances** - Configure multiple instances of the same provider
 - **Health checks** - Built-in health check support with caching
 - **Bulk operations** - Efficient batch processing for mass communications
@@ -74,6 +74,14 @@ Add to your `appsettings.json`:
               "Name": "sendgrid-api-key",
               "MaxRetries": 3,
               "SandboxMode": false
+            }
+          }
+        },
+        "Azure": {
+          "Instances": {
+            "default": {
+              "Name": "azure-email-connection",
+              "MaxRetries": 3
             }
           }
         },
