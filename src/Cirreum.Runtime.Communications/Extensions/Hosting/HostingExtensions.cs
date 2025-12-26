@@ -65,7 +65,12 @@ public static class HostingExtensions {
 				TwilioSmsRegistrar,
 				TwilioSmsSettings,
 				TwilioSmsInstanceSettings,
-				TwilioSmsHealthCheckOptions>();
+				TwilioSmsHealthCheckOptions>()
+			.RegisterServiceProvider<
+				AzureSmsRegistrar,
+				AzureSmsSettings,
+				AzureSmsInstanceSettings,
+				AzureSmsHealthCheckOptions>();
 
 		// .RegisterServiceProvider<AbcSmsRegistrar>();
 
