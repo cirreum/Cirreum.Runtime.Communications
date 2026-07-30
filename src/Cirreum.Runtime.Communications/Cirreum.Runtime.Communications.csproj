@@ -6,11 +6,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Cirreum.Communications.Sms.Azure" Version="1.0.25" />
-		<PackageReference Include="Cirreum.Communications.Sms.Twilio" Version="1.0.30" />
-		<PackageReference Include="Cirreum.Communications.Email.SendGrid" Version="1.0.21" />
-		<PackageReference Include="Cirreum.Communications.Email.Azure" Version="1.0.20" />
-		<PackageReference Include="Cirreum.Runtime.ServiceProvider" Version="1.0.20" />
+		<PackageReference Include="Cirreum.Communications.Sms.Azure" Version="1.1.0" />
+		<PackageReference Include="Cirreum.Communications.Sms.Twilio" Version="1.0.31" />
+		<PackageReference Include="Cirreum.Communications.Email.SendGrid" Version="1.0.22" />
+		<PackageReference Include="Cirreum.Communications.Email.Azure" Version="1.1.0" />
+		<PackageReference Include="Cirreum.Runtime.ServiceProvider" Version="1.0.21" />
 	</ItemGroup>
 	
 </Project>
